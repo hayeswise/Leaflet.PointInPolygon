@@ -123,4 +123,5 @@ Checks if a single point is contained in a polygon.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| A | <code>L.LatLng</code> | geographical point with a latitude and longitude. |
+| p | <code>L.LatLng</code> | A geographical point with a latitude and longitude. |
+
