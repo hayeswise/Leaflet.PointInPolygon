@@ -1,12 +1,12 @@
 /******************************************************************************
- * wise-leaflet-extensions
+ * Leaflet.PointInPolygon
  * @author Brian S Hayes (Hayeswise)
  * @license MIT License, Copyright (c) 2017 Brian Hayes ("Hayeswise")
  *
  * Thanks to:<br>
- * Leaflet.Geodesic by Kevin Brasier (a.k.a. Fragger)<br>
  * Dan Sunday's Winding Number and isLeft C++ implementation - http://geomalgorithms.com/.
  *   Copyright and License: http://geomalgorithms.com/a03-_inclusion.html
+ * Leaflet.Geodesic by Kevin Brasier (a.k.a. Fragger)<br>
  */
 
 /**
@@ -37,16 +37,17 @@
 /**
  * Hayeswise Point-in-polygon for Leaflet:  A plugin for Leaflet that provides
  * points-in-polygons functions based on Dan Sunday's C++ winding number implementation.
- * @module {function} wise-leaflet-pip
+ * @module {function} wiseLeafletPip
  * @param {function} Leaflet namespace object.
+ * @see {@link https://github.com/hayeswise/Leaflet.PointInPolygon|Leaflet.PointInPolygon}
  * @see {@link http://geomalgorithms.com/a03-_inclusion.html Inclusion of a Point in a Polygon} by Dan Sunday.
  */
-(function leaflet(L) {
+(function(L) {
     /**
      * Checks if a single point is contained in a polygon.
      * <p>Note that L.GeodesicPolygons and L.GeodesicCircles are types of L.Polygon
-     * @member external:L.Polyline.contains
-     * @param {L.LatLng} A geographical point with a latitude and longitude.
+     * @member external:L.Polygon.contains
+     * @param {L.LatLng} p A geographical point with a latitude and longitude.
      * @see {@link https://github.com/Fragger/Leaflet.Geodesic Leaflet.Geodesc} for information about Leaflet.Geodesc by Fragger.
      */
     L.Polygon.prototype.contains = function (p) {
