@@ -106,6 +106,11 @@
             n,
             vertices,
             wn; // the winding number counter
+        // Flatten array of LatLngs since multi-polylines return nested array.
+        // flatten codde from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+        const flatten = arr => arr.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []); 
+        vertices = flatten(this.getLatLngs());
+        // Filter out duplicate vertices.  
         vertices = this.getLatLngs().filter(function (v, i, array) {
             if (i > 0 && v.lat === array[i-1].lat && v.lng === array[i-1].lng) { // Intenionally not using L.LatLng.equals since equals() allows for small margin of error.
                 return false;
