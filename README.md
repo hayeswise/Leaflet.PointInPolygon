@@ -29,13 +29,34 @@ the install the [Portals-in-Polygons](https://github.com/hayeswise/iitc-portalsi
 
 # Instructions for Including the Plugin
 
+## Web Page Inclusion
+Use the script tag and pull from the CDN.
+
+RawGit Production CDN:
+```
+<script src="https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js"></script>
+```
+RawGit Development CDN
+```
+<script src="https://rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js"></script>
+```
+## Greasemonkey or Tampermonkey
+
+If you are using Greasemonkey or Tampermonkey scripts as done with IITC plugins, use one of the following require metadata block keys and values:
+
+* RawGit Production CDN:<br>
+  @require        https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js
+
+* RawGit Development CDN:<br>
+  @require        https://rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js
+
 # Simple Example
 
 # API
 See [API](https://github.com/hayeswise/Leaflet.PointInPolygon/blob/master/wise-leaflet-pip.md).
 
 # CDN
-CDN services provided by [RawGit](http://rawgit.com/).  This is useful for referencing the code distribution in [JSFiddle](https://jsfiddle.net).  Just note that the CDN updates lag behind the GitHub updates.
+CDN services provided by [RawGit](http://rawgit.com/).  This is useful for referencing the code distribution in [JSFiddle](https://jsfiddle.net).  Just note that the CDN updates lag behind the GitHub updates.  Production updates are behind Development updates. The Production CDN has no limits or throttling (but since this is a free service, there's no uptime or support guarantees).
 * Via RawGit [Development](https://rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js).
 * Via RawGit [Production](https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js).
 
@@ -44,3 +65,4 @@ Thanks to:
 * [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.html) by Dan Sunday
 * [JSHint](http://jshint.com/)
 * CondorTheGreat for the first demo at JSFiddle (https://jsfiddle.net/CondorTheGreat/hhqqmbqc/)
+* [RawGit](https://rawgit.com/) and [StackPath](https://www.stackpath.com/)
