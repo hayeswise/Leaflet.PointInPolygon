@@ -49,7 +49,7 @@
      * <p>
      * Note that L.Polygon, L.GeodesicPolygons, and L.GeodesicCircles are types of L.Polygon.
      * @member external:L.Polyline.contains
-     * @param {L.LatLng} A geographical point with a latitude and longitude.
+     * @param {L.LatLng} p A geographical point with a latitude and longitude.
      * @returns {boolean} True if the point is contained in the polygon or polyline; otherwise, 
      * @see {@link https://github.com/Fragger/Leaflet.Geodesic Leaflet.Geodesc} for information about Leaflet.Geodesc by Fragger.
      */
@@ -72,7 +72,7 @@
      * @member external:L.LatLng.isLeft
      * @param {LatLng} p1 Point The reference line is defined by `this` LatLng to p1.
      * @param {LatLng} p2 The point in question.
-     * @return >0 for p2 left of the line through this point and p1,
+     * @returns {Number} >0 for p2 left of the line through this point and p1,
      *          =0 for p2 on the line,
      *          <0 for p2 right of the line through this point an p1.
      * @see {@link http://geomalgorithms.com/a03-_inclusion.html Inclusion of a Point in a Polygon} by Dan Sunday.
@@ -95,7 +95,7 @@
      *
      * @member external:L.Polyline.getWindingNumber
      * @param p {L.LatLng} A point.
-     * @retuns {Number} The winding number (=0 only when the point is outside)
+     * @returns {Number} The winding number (=0 only when the point is outside)
      *
      * @see {@link http://geomalgorithms.com/a03-_inclusion.html Inclusion of a Point in a Polygon} by Dan Sunday.
      * @see {@link https://github.com/Fragger/Leaflet.Geodesic Leaflet.Geodesc} for information about Leaflet.Geodesc by Fragger.
