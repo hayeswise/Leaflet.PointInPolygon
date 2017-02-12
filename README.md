@@ -11,13 +11,7 @@ See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.h
 # Demos
 Demo on JSFiddle: [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/hhqqmbqc/10/). Click on the map or the markers and a pop-up will show indicating if the point you clicked on, or the marker, is in the polygon.
 
-![Leaflet.PointInPolygon Demo screen shot] (https://raw.githubusercontent.com/hayeswise/Leaflet.PointInPolygon/master/DemoScreenShot.PNG)
-
-<div class="iframe_container">
-<iframe
-  style="width: 100%; height: 300px"
-  src="https://jsfiddle.net/hayeswise/hhqqmbqc/10/embedded/"> </iframe>
-  </div>
+[![Leaflet.PointInPolygon Demo screen shot] (https://raw.githubusercontent.com/hayeswise/Leaflet.PointInPolygon/master/DemoScreenShot.PNG)](https://jsfiddle.net/hayeswise/hhqqmbqc/10/embedded/result,html,js,css) (Clickable image)
 
 Leaflet.PointInPolygon is plugin was Originally developed for the [Ingress Intel Total Conversion](https://iitc.me/)(IITC). 
 If you have a [Ingress](https://ingress.com/) account, install the Ingress Intel Total Conversion desktop and 
