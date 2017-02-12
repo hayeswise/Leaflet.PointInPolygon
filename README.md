@@ -64,3 +64,4 @@ Thanks to:
 * [JSHint](http://jshint.com/)
 * CondorTheGreat for the first demo at JSFiddle (https://jsfiddle.net/CondorTheGreat/hhqqmbqc/)
 * [RawGit](https://rawgit.com/) and [StackPath](https://www.stackpath.com/)
+* [Leaflet](http://leafletjs.com/)
