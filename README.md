@@ -11,8 +11,7 @@ The Leaflet.PointInPolygon is plugin was Originally developed for the [Ingress I
 If you have a [Ingress](https://ingress.com/) account, install the Ingress Intel Total Conversion desktop and 
 the install the [Portals-in-Polygons](https://github.com/hayeswise/iitc-portalsinpolygons) plugin.
 
-Demo on JSFiddle:
-<script async src="//jsfiddle.net/hayeswise/hhqqmbqc/embed/"></script>
+Demo on JSFiddle: [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/hhqqmbqc/10/).
 
 # Instructions for Including the Plugin
 
