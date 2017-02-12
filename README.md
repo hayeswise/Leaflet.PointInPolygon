@@ -42,7 +42,7 @@ RawGit Development CDN
 ```
 ## Greasemonkey or Tampermonkey
 
-If you are using Greasemonkey or Tampermonkey scripts as done with IITC plugins, use one of the following require metadata block keys and values:
+If you are using Greasemonkey or Tampermonkey scripts, as done with IITC plugins, use one of the following require metadata block keys and values:
 
 * RawGit Production CDN:<br>
   @require        https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js
