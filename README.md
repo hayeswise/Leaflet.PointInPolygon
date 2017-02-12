@@ -4,7 +4,7 @@ Point-in-polygon functions based on Dan Sunday's C++winding number implementatio
 See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.html) by Dan Sunday.
 
 # Requirements
-* Leaflet:  This has been tested on a variant of Leaflet version 0.7.7 and [Leaflet.Geodesic](https://github.com/Fragger/Leaflet.Geodesic) dated April 26, 2013.
+* Leaflet:  This has been tested on a variant of Leaflet version 0.7.7, version Leaflet 1.0.3 (from GitHub), and [Leaflet.Geodesic](https://github.com/Fragger/Leaflet.Geodesic) dated April 26, 2013.
 
 # Demos
 The Leaflet.PointInPolygon is plugin was Originally developed for the [Ingress Intel Total Conversion](https://iitc.me/)(IITC). 
