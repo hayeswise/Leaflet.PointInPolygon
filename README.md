@@ -9,11 +9,21 @@ See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.h
 * Leaflet:  This has been tested on a variant of Leaflet version 0.7.7, version Leaflet 1.0.3 (from GitHub), and [Leaflet.Geodesic](https://github.com/Fragger/Leaflet.Geodesic) dated April 26, 2013.
 
 # Demos
-The Leaflet.PointInPolygon is plugin was Originally developed for the [Ingress Intel Total Conversion](https://iitc.me/)(IITC). 
+Demo on JSFiddle: [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/hhqqmbqc/10/). Click on the map or the markers and a pop-up will show indicating if the point you clicked on, or the marker, is in the polygon.
+
+![Leaflet.PointInPolygon Demo screen shot] (https://raw.githubusercontent.com/hayeswise/Leaflet.PointInPolygon/master/DemoScreenShot.PNG)
+
+<div class="iframe_container">
+<iframe
+  style="width: 100%; height: 300px"
+  src="https://jsfiddle.net/hayeswise/hhqqmbqc/10/embedded/"> </iframe>
+  </div>
+
+Leaflet.PointInPolygon is plugin was Originally developed for the [Ingress Intel Total Conversion](https://iitc.me/)(IITC). 
 If you have a [Ingress](https://ingress.com/) account, install the Ingress Intel Total Conversion desktop and 
 the install the [Portals-in-Polygons](https://github.com/hayeswise/iitc-portalsinpolygons) plugin.
 
-Demo on JSFiddle: [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/hhqqmbqc/10/).
+![Portals-in-polygons UI screen shot](https://github.com/hayeswise/iitc-portalsinpolygons/blob/master/docs/portals-in-polygons-ui.png?raw=true)
 
 # Instructions for Including the Plugin
 
