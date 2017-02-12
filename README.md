@@ -1,5 +1,7 @@
 # Leaflet.PointInPolygon
-Point-in-polygon functions based on Dan Sunday's C++winding number implementation.  
+Point-in-polygon functions based on Dan Sunday's C++ winding number implementation. Currently, and unlike the C++ implementation,
+points on the lines and vertices are considered as being included in the polygon.  As such, the `getWindingNumber()` function will
+work for a polyline.
 
 See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.html) by Dan Sunday.
 
