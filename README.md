@@ -32,7 +32,7 @@ the install the [Portals-in-Polygons](https://github.com/hayeswise/iitc-portalsi
 ## Web Page Inclusion
 Use the script tag and pull from the CDN.
 
-RawGit Production CDN:
+RawGit Production CDN [USE DEVELOPMENT - WATING ON SYNCH]:
 ```
 <script src="https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js"></script>
 ```
@@ -44,7 +44,7 @@ RawGit Development CDN
 
 If you are using Greasemonkey or Tampermonkey scripts, as done with IITC plugins, use one of the following require metadata block keys and values:
 
-* RawGit Production CDN:<br>
+* RawGit Production CDN: [USE DEVELOPMENT- WATING ON SYNCH]<br>
   @require        https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js
 
 * RawGit Development CDN:<br>
