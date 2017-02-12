@@ -53,6 +53,30 @@ If you are using Greasemonkey or Tampermonkey scripts, as done with IITC plugins
 # API
 See [API](https://github.com/hayeswise/Leaflet.PointInPolygon/blob/master/wise-leaflet-pip.md).
 
+# Example
+
+```
+var polygon = L.polygon([
+  [51.51, -0.08],
+  [51.503, -0.06],
+  [51.51, -0.047]
+]).addTo(mymap);
+var m1 = L.marker([51.515, -0.07]); // Outside and north of polygon
+var m2 = L.marker([51.506, -0.06]); // In polygon, not on border
+var m2 = L.marker([51.505, -0.074]); // Inside polygon boundary box but outside of polygon. 
+var m2 = L.marker([51.51, -0.067]); // On polygon border.
+
+console.log(polygon.contains(m1.getLatLng()));
+// ==> false
+console.log(polygon.contains(m2.getLatLng()));
+// ==> true
+console.log(polygon.contains(m3.getLatLng()));
+// ==> false
+console.log(polygon.contains(m4.getLatLng()));
+// ==> true
+```
+For a more comprehensive example using the above code, see [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/bh2wuve8/embedded/result,html,js,css).  Click on the 
+
 # CDN
 CDN services provided by [RawGit](http://rawgit.com/).  This is useful for referencing the code distribution in [JSFiddle](https://jsfiddle.net).  Just note that the CDN updates lag behind the GitHub updates.  Production updates are behind Development updates. The Production CDN has no limits or throttling (but since this is a free service, there's no uptime or support guarantees).
 * Via RawGit [Production](https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/v1.0.0/wise-leaflet-pip.js).
