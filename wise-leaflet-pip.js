@@ -44,10 +44,11 @@
  */
 (function(L) {
     /**
-     * Checks if a single point is contained in a polygon.
+     * Checks if a single point is contained in a polygon (inclusive of the boundaries).
      * <p>Note that L.GeodesicPolygons and L.GeodesicCircles are types of L.Polygon
      * @member external:L.Polygon.contains
      * @param {L.LatLng} p A geographical point with a latitude and longitude.
+     * @returns {boolean} True if the point is in the polygon (inclusive of the boundaries); otherwise, false.
      * @see {@link https://github.com/Fragger/Leaflet.Geodesic Leaflet.Geodesc} for information about Leaflet.Geodesc by Fragger.
      */
     L.Polygon.prototype.contains = function (p) {
