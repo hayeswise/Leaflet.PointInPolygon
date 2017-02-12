@@ -1,7 +1,6 @@
 # Leaflet.PointInPolygon
 <img align="left" src="https://github.com/hayeswise/Leaflet.PointInPolygon/blob/master/PiPwn-logo.png?raw=true">
-The Leaflet.PointInPolygon plugin/extension for [Leaflet](http://leafletjs.com/) 
-provides point-in-polygon functions 
+Leaflet.PointInPolygon is a [Leaflet](http://leafletjs.com/) plugin/extension that provides point-in-polygon functions 
 based on Dan Sunday's C++ winding number implementation. Functions `contains()`, `getWindingNumber()`, and `isLeft()` extend
 Leaflet classes `L.Polygon`, `L.Polyline`, and `L.LatLng`.
 <a href="http://leafletjs.com/"><img align="right" src="https://s3.amazonaws.com/uploads.uservoice.com/logo/design_setting/94572/original/leaflet-logo.png?1329832491"></a>
