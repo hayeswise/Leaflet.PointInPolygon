@@ -29,3 +29,4 @@ CDN services provided by [RawGit](http://rawgit.com/).  This is useful for refer
 Thanks to:
 * [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.html) by Dan Sunday
 * [JSHint](http://jshint.com/)
+* CondorTheGreat for the first demo at JSFiddle (https://jsfiddle.net/CondorTheGreat/hhqqmbqc/)
