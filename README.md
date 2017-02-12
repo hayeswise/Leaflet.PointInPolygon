@@ -50,8 +50,6 @@ If you are using Greasemonkey or Tampermonkey scripts, as done with IITC plugins
 * RawGit Development CDN:<br>
   @require        https://rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js
 
-# Simple Example
-
 # API
 See [API](https://github.com/hayeswise/Leaflet.PointInPolygon/blob/master/wise-leaflet-pip.md).
 
