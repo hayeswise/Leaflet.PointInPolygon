@@ -1,10 +1,10 @@
 # Leaflet.PointInPolygon
 <img align="left" src="https://github.com/hayeswise/Leaflet.PointInPolygon/blob/master/PiPwn-logo.png?raw=true">
 The Leaflet.PointInPolygon plugin/extension for [Leaflet](http://leafletjs.com/) 
-<a href="http://leafletjs.com/"><img align="right" src="https://s3.amazonaws.com/uploads.uservoice.com/logo/design_setting/94572/original/leaflet-logo.png?1329832491"></a>
 provides point-in-polygon functions 
 based on Dan Sunday's C++ winding number implementation. Functions `contains()`, `getWindingNumber()`, and `isLeft()` extend
 Leaflet classes `L.Polygon`, `L.Polyline`, and `L.LatLng`.
+<a href="http://leafletjs.com/"><img align="right" src="https://s3.amazonaws.com/uploads.uservoice.com/logo/design_setting/94572/original/leaflet-logo.png?1329832491"></a>
 The winding number method has an advantage to the crossing number method since 
 "the winding number accurately determines if a point is inside a nonsimple closed polygon" (
 See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.html) by Dan Sunday).
