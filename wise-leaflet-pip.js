@@ -72,7 +72,7 @@
      * @member external:L.LatLng.isLeft
      * @param {LatLng} p1 Point The reference line is defined by `this` LatLng to p1.
      * @param {LatLng} p2 The point in question.
-     * @return >0 for p2 left of the line through this point and p1,
+     * @returns {Number} >0 for p2 left of the line through this point and p1,
      *          =0 for p2 on the line,
      *          <0 for p2 right of the line through this point an p1.
      * @see {@link http://geomalgorithms.com/a03-_inclusion.html Inclusion of a Point in a Polygon} by Dan Sunday.
