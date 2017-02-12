@@ -43,6 +43,7 @@
  * @see {@link http://geomalgorithms.com/a03-_inclusion.html Inclusion of a Point in a Polygon} by Dan Sunday.
  */
 (function(L) {
+    "use strict";
     /**
      * Checks if a single point is contained in a polygon (inclusive of the boundaries).
      * <p>Note that L.GeodesicPolygons and L.GeodesicCircles are types of L.Polygon
@@ -106,13 +107,20 @@
             n,
             vertices,
             wn; // the winding number counter
-        // Flatten array of LatLngs since multi-polylines return nested array.
-        // flatten codde from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
-        const flatten = arr => arr.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []); 
-        vertices = flatten(this.getLatLngs());
+        function flatten(a) {
+            var flat;
+            flat = ((Array.isArray ? Array.isArray(a) : L.Util.isArray(a)) ? a.reduce(function (accumulator, v, i, array) {
+                    return accumulator.concat(Array.isArray(v) ? flatten(v) : v);
+                }, [])
+                : a);
+            return flat;
+        }
+
+        vertices = this.getLatLngs();
+        vertices = flatten(vertices); // Flatten array of LatLngs since multi-polylines return nested array.
         // Filter out duplicate vertices.  
-        vertices = this.getLatLngs().filter(function (v, i, array) {
-            if (i > 0 && v.lat === array[i-1].lat && v.lng === array[i-1].lng) { // Intenionally not using L.LatLng.equals since equals() allows for small margin of error.
+        vertices = vertices.filter(function (v, i, array) { // remove adjacent duplicates
+            if (i > 0 && v.lat === array[i-1].lat && v.lng === array[i-1].lng) {
                 return false;
             } else {
                 return true;
@@ -120,7 +128,7 @@
         });
         n = vertices.length;
         // Note that per the algorithm, the vertices (V) must be "a vertex points of a polygon V[n+1] with V[n]=V[0]"
-        if (n > 0 && !vertices[n-1].equals(vertices[0])) {
+        if (n > 0 && !(vertices[n-1].lat === vertices[0].lat && vertices[n-1].lng === vertices[0].lng)) {
             vertices.push(vertices[0]);
         }
         n = vertices.length - 1;
