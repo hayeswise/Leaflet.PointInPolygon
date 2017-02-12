@@ -9,9 +9,9 @@ See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.h
 * Leaflet:  This has been tested on a variant of Leaflet version 0.7.7, version Leaflet 1.0.3 (from GitHub), and [Leaflet.Geodesic](https://github.com/Fragger/Leaflet.Geodesic) dated April 26, 2013.
 
 # Demos
-Demo on JSFiddle: [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/9g60djpb/). Click on the map or the markers and a pop-up will show indicating if the point you clicked on, or the marker, is in the polygon.
+Demo on JSFiddle: [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/bh2wuve8/embedded/result,html,js,css).  And if you want to fork a copy of the fiddle, [click here](https://jsfiddle.net/hayeswise/bh2wuve8/). Click on the map or the markers and a pop-up will show indicating if the point you clicked on, or the marker, is in the polygon.
 
-[![Leaflet.PointInPolygon Demo screen shot] (https://raw.githubusercontent.com/hayeswise/Leaflet.PointInPolygon/master/DemoScreenShot.PNG)](https://jsfiddle.net/hayeswise/9g60djpb/embedded/result,html,js,css) (Clickable image)
+[![Leaflet.PointInPolygon Demo screen shot] (https://raw.githubusercontent.com/hayeswise/Leaflet.PointInPolygon/master/DemoScreenShot.PNG)](https://jsfiddle.net/hayeswise/bh2wuve8/embedded/result,html,js,css) (Clickable image)
 
 Leaflet.PointInPolygon is plugin was Originally developed for the [Ingress Intel Total Conversion](https://iitc.me/)(IITC). 
 If you have a [Ingress](https://ingress.com/) account, install the Ingress Intel Total Conversion desktop and 
