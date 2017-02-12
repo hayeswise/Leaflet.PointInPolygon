@@ -45,14 +45,15 @@
 (function(L) {
     "use strict";
     /**
-     * Checks if a single point is contained in a polygon (inclusive of the boundaries).
-     * <p>Note that L.GeodesicPolygons and L.GeodesicCircles are types of L.Polygon
-     * @member external:L.Polygon.contains
-     * @param {L.LatLng} p A geographical point with a latitude and longitude.
-     * @returns {boolean} True if the point is in the polygon (inclusive of the boundaries); otherwise, false.
+     * Checks if a single point is contained in a polyline or polygon (L.Polygon extends L.Polyline).
+     * <p>
+     * Note that L.Polygon, L.GeodesicPolygons, and L.GeodesicCircles are types of L.Polygon.
+     * @member external:L.Polyline.contains
+     * @param {L.LatLng} A geographical point with a latitude and longitude.
+     * @returns {boolean} True if the point is contained in the polygon or polyline; otherwise, 
      * @see {@link https://github.com/Fragger/Leaflet.Geodesic Leaflet.Geodesc} for information about Leaflet.Geodesc by Fragger.
      */
-    L.Polygon.prototype.contains = function (p) {
+    L.Polyline.prototype.contains = function (p) {
         //"use strict";
         var rectangularBounds = this.getBounds();  // It appears that this is O(1): the LatLngBounds is updated as points are added to the polygon when it is created.
         var wn;
@@ -77,7 +78,6 @@
      * @see {@link http://geomalgorithms.com/a03-_inclusion.html Inclusion of a Point in a Polygon} by Dan Sunday.
      */
     L.LatLng.prototype.isLeft = function (p1, p2) {
-        //"use strict";
         return ((p1.lng - this.lng) * (p2.lat - this.lat) -
                 (p2.lng - this.lng) * (p1.lat - this.lat));
     };
@@ -101,7 +101,6 @@
      * @see {@link https://github.com/Fragger/Leaflet.Geodesic Leaflet.Geodesc} for information about Leaflet.Geodesc by Fragger.
      */
     L.Polyline.prototype.getWindingNumber = function (p) { // Note that L.Polygon extends L.Polyline
-        //"use strict";
         var i,
             isLeftTest,
             n,
