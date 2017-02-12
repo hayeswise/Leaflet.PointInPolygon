@@ -1,11 +1,13 @@
 # Leaflet.PointInPolygon
 <img align="left" src="https://github.com/hayeswise/Leaflet.PointInPolygon/blob/master/PiPwn-logo.png?raw=true">
-Point-in-polygon functions based on Dan Sunday's C++ winding number implementation. Currently, and unlike the C++ implementation,
+Point-in-polygon functions based on Dan Sunday's C++ winding number implementation. 
+The winding number method has an advantage to the crossing number method since 
+"the winding number accurately determines if a point is inside a nonsimple closed polygon" (
+See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.html) by Dan Sunday).
+
+Unlike the C++ implementation,
 points on the lines and vertices are considered as being included in the polygon.  As such, the `getWindingNumber()` function will
-work for a polyline.
-
-
-See [Inclusion of a Point in Polygon](http://geomalgorithms.com/a03-_inclusion.html) by Dan Sunday.
+work for a polyline.  
 
 # Requirements
 * Leaflet:  This has been tested on a variant of Leaflet version 0.7.7, version Leaflet 1.0.3 (from GitHub), and [Leaflet.Geodesic](https://github.com/Fragger/Leaflet.Geodesic) dated April 26, 2013.
