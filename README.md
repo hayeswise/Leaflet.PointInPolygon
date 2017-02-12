@@ -75,7 +75,7 @@ console.log(polygon.contains(m3.getLatLng()));
 console.log(polygon.contains(m4.getLatLng()));
 // ==> true
 ```
-For a more comprehensive example using the above code, see [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/bh2wuve8/embedded/result,html,js,css).  Click on the 
+For a more comprehensive example using the above code, see [Leaflet.PointInPolygon Demo](https://jsfiddle.net/hayeswise/bh2wuve8/embedded/result,html,js,css).  Click on the Javascript tab to see the code.
 
 # CDN
 CDN services provided by [RawGit](http://rawgit.com/).  This is useful for referencing the code distribution in [JSFiddle](https://jsfiddle.net).  Just note that the CDN updates lag behind the GitHub updates.  Production updates are behind Development updates. The Production CDN has no limits or throttling (but since this is a free service, there's no uptime or support guarantees).
