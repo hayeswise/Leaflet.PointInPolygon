@@ -64,8 +64,8 @@ var polygon = L.polygon([
 ]).addTo(mymap);
 var m1 = L.marker([51.515, -0.07]); // Outside and north of polygon
 var m2 = L.marker([51.506, -0.06]); // In polygon, not on border
-var m2 = L.marker([51.505, -0.074]); // Inside polygon boundary box but outside of polygon. 
-var m2 = L.marker([51.51, -0.067]); // On polygon border.
+var m3 = L.marker([51.505, -0.074]); // Inside polygon boundary box but outside of polygon. 
+var m4 = L.marker([51.51, -0.067]); // On polygon border.
 
 console.log(polygon.contains(m1.getLatLng()));
 // ==> false
